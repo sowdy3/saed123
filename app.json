@@ -1,0 +1,93 @@
+{
+    "name": "𝙈𝙪𝙨𝙞𝙘-𝘼𝙗𝙣 𝘼𝙇-𝘿𝙪𝙬𝙧𝙖",
+    "description": "بوت تشغيل الموسيقي والفديو في لالمحادثة الصوتيى",
+    "logo": "https://telegra.ph/file/0a0956a70aa24b5e54190.jpg",
+    "keywords": [
+        "محادثات صوتية",
+        "بوتات تيلجرام",
+        "تشغيل فديو",
+        "بيوجرام"
+    ],
+    "website": "https://t.me/OYOYV",
+    "repository": "https://github.com/Music-Top/ifkjh",
+    "success_url": "https://t.me/OYOYV",
+    "env": {
+        "API_ID": {
+            "description": "api id تستطيع جلبه من my.telegram.org",
+            "required": true
+        },
+        "API_HASH": {
+            "description": "api hash تستطيع جلبه من.telegram.org",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "التوكين اللخاص بك من @BotFather",
+            "required": true
+        },
+        "ALIVE_IMG": {
+            "description": "صوره السورس",
+            "required": true,
+            "value": "https://telegra.ph/file/0a0956a70aa24b5e54190.jpg"
+        },
+        "BOT_USERNAME": {
+            "description": "معرف بوتك @BotFather",
+            "required": true
+        },
+        "BOT_NAME": {
+            "description": "اسم بوتك الموجود ب @BotFather",
+            "required": true
+        },
+        "ASSISTANT_NAME": {
+            "description": "معرف الحساب المساعد بدون @",
+            "required": true,
+            "value": "JKAEBT"
+        },
+        "SESSION_NAME": {
+            "description": "جلسة البيوجرام",
+            "required": true
+        },
+        "SUDO_USERS": {
+            "description": "ايدي المطورين",
+            "required": true,
+            "value": "1254750804"
+        },
+        "GROUP_SUPPORT": {
+            "description": "معرف جروب الدعم بدون @",
+            "required": true,
+            "value": "FIINJAKE"
+        },
+        "UPDATES_CHANNEL": {
+            "description": "معرف قناتك بدون @",
+            "required": true,
+            "value": "x02x2"
+        },
+        "OWNER_NAME": {
+            "description": "معرف المطور بدون @",
+            "required": true,
+            "value": "R4005"
+        },
+        "ALIVE_NAME": {
+            "description": "اسم حسابك علي التيلجرام",
+            "required": true
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        },
+        {
+            "url": "heroku/nodejs"
+        },
+        {
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "container"
+}
